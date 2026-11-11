@@ -1,0 +1,37 @@
+{
+  "id": "token-hands-cpred",
+  "title": "Руки на токене: RED",
+  "description": "Показывает на токенах персонажей и NPC Cyberpunk RED, что у них в руках: оружие, щиты и установленную кибернетику. Поддерживает любое число рук — искусственные плечевые крепления, дополнительные киберруки и потерянные конечности учитываются системой. Работает поверх базового модуля «Руки на токене» (token-hands): этот модуль только определяет, какие предметы актёр держит в руках, а квадратики, иконки и клик по ним рисует база.",
+  "version": "1.0.1",
+  "authors": [
+    { "name": "token-hands-cpred contributors" }
+  ],
+  "license": "MIT",
+  "readme": "README.md",
+  "compatibility": {
+    "minimum": "14",
+    "verified": "14.369"
+  },
+  "relationships": {
+    "requires": [
+      {
+        "id": "token-hands",
+        "type": "module",
+        "active": true,
+        "compatibility": { "minimum": "1.12.2" }
+      }
+    ],
+    "systems": [
+      {
+        "id": "cyberpunk-red-core",
+        "type": "system",
+        "compatibility": { "minimum": "0.1.1" }
+      }
+    ]
+  },
+  "esmodules": ["token-hands-cpred.mjs"],
+  "languages": [
+    { "lang": "en", "name": "English", "path": "lang/en.json" },
+    { "lang": "ru", "name": "Русский", "path": "lang/ru.json" }
+  ]
+}
